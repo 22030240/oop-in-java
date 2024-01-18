@@ -1,0 +1,12 @@
+# include<stdio.h>
+int main(){
+    int num;
+    int sum=0;
+    printf(" enter the number\t");
+    scanf("%d",&num);
+    while(num!=0){
+        sum=sum+num;
+    }
+    printf("sum is %d:-",sum);
+    return 0;
+}

@@ -1,0 +1,22 @@
+import java.util.scanner;
+
+public class Special(int y){
+    f=1;
+    for(int i=1;i<=y;i++){
+        f*=i;
+    }
+    system.out.println(f);
+
+}
+public static void main(String[] args) {
+    scanner sc=new scanner(System.in);
+    system.out.println("Enter num");
+    int num=sc.nextInt();
+    int sum=0;
+    while(num!=0){
+        int d=num%10;
+        sum+=Special(d);
+        num=num/10;
+    }
+
+}

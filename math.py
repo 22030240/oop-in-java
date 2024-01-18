@@ -1,0 +1,30 @@
+import math
+
+x = math.sqrt(64)
+
+print(x)
+
+y=math.ceil(39.7)
+z=math.ceil(39.2)
+print(y)
+print(z)
+y=math.copysign(5,-3)
+z=math.copysign(-5,3)
+print(y)
+print(z)
+f=math.copysign(-4,-5)
+print(f)
+
+n=int(input("Enter no:"))
+t=math.factorial(n)
+print(t)
+t=math.factorial(7)
+print(t)
+f=int(input("Enter value-->"))
+g=math.fabs(f)
+print(g)
+k=int(input("Enter no-->"))
+g=math.floor(k)
+print(g)
+h=math.fsum(7)
+print("chomnya ritya :")

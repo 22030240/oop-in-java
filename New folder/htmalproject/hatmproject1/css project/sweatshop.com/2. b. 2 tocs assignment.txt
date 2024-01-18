@@ -1,0 +1,17 @@
+To show that the language L = {a^n b^m | n ≠ m} is not regular using the pumping lemma, we need to assume that L is regular and then derive a contradiction.
+
+The pumping lemma states that for any regular language L, there exists a pumping length p such that any string s in L with |s| ≥ p can be divided into five parts: s = xyzuv, satisfying the following conditions:
+
+|yuz| > 0
+|xyzu| ≤ p
+For all natural numbers i, xy^izu^ivz is in L.
+Let's assume that L is regular and take the pumping length p. We will consider the string s = a^pb^(p+k), where k is a positive integer. This string is in L since n = p and m = p + k, and n ≠ m.
+
+Now let's divide s into five parts: s = xyzuv, following the conditions of the pumping lemma:
+
+x consists of only a's, y consists of a's, z consists of b's, u consists of b's, and v is empty.
+Since |xyzu| ≤ p, the substring xy can only contain a's, and zu can only contain b's.
+According to the pumping lemma, for all natural numbers i, xy^izu^ivz should be in L.
+Let's consider the string s' = xy^0zu^0vz = xz. Since y and u are empty after removing them, s' contains only a's followed by b's. However, the number of a's in s' is less than the number of b's, which means s' does not belong to L. This contradicts the pumping lemma, which states that all strings obtained by pumping should be in L.
+
+Therefore, we have reached a contradiction, and our initial assumption that L is regular must be false. Hence, the language L = {a^n b^m | n ≠ m} is not regular.
